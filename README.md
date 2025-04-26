@@ -1,3 +1,79 @@
+QR CODE SCREENSHOT İMG FİLE TO TOTP SECRET CODE WITH ZBARIMG.EXE on Windows OS
+====================
+
+The Python script is an easy way to learn the TOTP secret code using Zbarimg.exe.
+
+-------------------------------------------------
+
+Steps:
+
+Meet all requirements. Install Python 3.6+ and Zbar bar code reader. Install the required Python libraries (instructions below)
+
+Take a screenshot of the 2fa two-step verification QR code. If possible in .png format.
+
+run.bat file is double clicked and allowed to run.
+
+run.bat file runs totp_secret_extractor.py in powershell.
+
+python.exe runs. 
+
+File Explorer opens. you are prompted to select the img file.
+
+If you select the QR Code screenshot file, 2da runs zbarimg.exe to scan the QR code!
+
+zbarimg.exe converts the img file to totp save code.
+
+separates the TOTP secret code after secret=. Shows it on the Powershell screen.
+
+If you add this code to your authenticator application and save it, it will show you your 6 digit TOTP code at certain time intervals.
+
+Then you are asked if you want to save the TOTP secret code as txt.
+
+Then you are asked if you want to close the window.
+
+------------------------------------------------------
+
+First of all, download the Zbar bar code reader app:
+
+https://sourceforge.net/projects/zbar/
+
+Install. The installation location should be the "C:\Program Files (x86)" directory.
+
+zbarimg.exe location:
+
+	"C:\Program Files (x86)\ZBar\bin\zbarimg.exe"
+
+ must be.
+
+---------------------------------------------------------
+
+Requirements:
+
+ Python 3.6+
+ 
+	pip install -r requirements.txt
+
+ totp_secret_extractor.py additionally needs Thinker to run. If you don't have Thinker installed (it is usually installed with python):
+
+ 	winget install Python.Python.3 --override "/InstallAllUsers=1 /AddToPath=1 /Include_tkinter=1"
+
+
+-------------------------------------------  
+  OR
+
+
+
+The use of zbarimg.exe:
+
+To convert a QR code screen image to TOTP, use the following code (for powershell):
+
+	"C:\Program Files (x86)\ZBar\bin\zbarimg.exe" -q --raw "<path_to_file>\qr_code.png"
+
+
+
+-------------------------------------------------
+-------------------------------------------------
+
 ZBAR BAR CODE READER
 ====================
 
@@ -41,13 +117,6 @@ You may find some outdated documentation at the original ZBar's
 site at Sourceforge, but please notice that the content there is not
 updated for ages:
 	http://zbar.sourceforge.net/
-
-
-The use of zbarimg.exe:
-
-To convert a QR code screen image to TOTP, use the following code (for powershell):
-
-	"C:\Program Files (x86)\ZBar\bin\zbarimg.exe" -q --raw "<path_to_file>\qr_code.png"
 
 
 
