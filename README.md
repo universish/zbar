@@ -39,13 +39,13 @@ run.bat file runs totp_secret_extractor.py in powershell.
 
 python.exe runs. 
 
-File Explorer opens. you are prompted to select the img file.
+File Explorer opens. You are prompted to select the img file.
 
-If you select the QR Code screenshot file, 2da runs zbarimg.exe to scan the QR code!
+If you select the QR Code screenshot file, runs zbarimg.exe to scan the 2fa QR code!
 
 zbarimg.exe converts the img file to totp save code.
 
-separates the TOTP secret code after secret=. Shows it on the Powershell screen.
+separates the TOTP secret code after "secret=". Shows it on the Powershell screen.
 
 If you add this code to your authenticator application and save it, it will show you your 6 digit TOTP code at certain time intervals.
 
