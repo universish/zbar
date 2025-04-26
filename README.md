@@ -43,6 +43,14 @@ updated for ages:
 	http://zbar.sourceforge.net/
 
 
+The use of zbarimg.exe:
+
+To convert a QR code screen image to TOTP, use the following code (for powershell):
+
+	"C:\Program Files (x86)\ZBar\bin\zbarimg.exe" -q --raw "<path_to_file>\qr_code.png"
+
+
+
 BUILDING
 ========
 
