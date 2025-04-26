@@ -21,7 +21,7 @@ So I wrote a python script to make it easier to use.
 
 	totp_secret_extractor.py
 
-I also created a bat file to easily run the ptyhon script.
+I also created a bat file to easily run the python script.
 
 	run.bat
 
