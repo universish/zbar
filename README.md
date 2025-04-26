@@ -5,7 +5,7 @@ The Python script is an easy way to learn the TOTP secret code using zbarimg.exe
 
 It is used to decoder the 2fa QR Code generated when generating the 2factor code for 2-step verification. QRCode is scanned and TOTP secret code is extracted from it.
 
-The 2fa QR Code is translated into TOTP Secret code.
+The 2fa QR Code is is decoded and converting into TOTP Secret code.
 
 Some websites do not show the code when generating the 2fa code. For example on patika.dev website. QR code is given only for scanning with authenticator applications. In Windows, for example, applications like ente-auth cannot scan QR code. TOTP secret code is needed.
 
