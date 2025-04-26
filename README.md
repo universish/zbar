@@ -1,4 +1,4 @@
-QR CODE SCREENSHOT İMG FİLE TO TOTP SECRET CODE WITH ZBARIMG.EXE on Windows OS
+QR CODE SCREENSHOT İMG FİLE TO TOTP SECRET CODE CONVERTER - QR CODE DECODER WITH zbarimg.exe
 ====================
 
 The Python script is an easy way to learn the TOTP secret code using Zbarimg.exe.
